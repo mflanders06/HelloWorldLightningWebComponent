@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Get Object Info using Wire" icon-name="utility:user">
+        <div class="slds-var-m-around_medium">
+            <div style="padding: 10px">
+                <template for:each={contacts} for:item="con">
+                    <p key={con.fields.Id.value}>{con.fields.Name.value}</p>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>
